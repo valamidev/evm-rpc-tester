@@ -23,6 +23,7 @@ export interface JsonRpcError {
   code: number | null;
   message: string | null;
   fullResponse: any | null;
+  body: any;
   latency: number;
   httpStatus: number;
   httpStatusText: string;
@@ -64,6 +65,7 @@ export class EthereumJsonRpc {
         code: null,
         message: null,
         fullResponse: null,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
@@ -79,6 +81,7 @@ export class EthereumJsonRpc {
         code: null,
         message: null,
         fullResponse: null,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
@@ -90,6 +93,7 @@ export class EthereumJsonRpc {
         code: null,
         message: null,
         fullResponse: data,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
@@ -100,6 +104,7 @@ export class EthereumJsonRpc {
         code: data.error.code,
         message: data.error.message,
         fullResponse: data,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
@@ -111,6 +116,7 @@ export class EthereumJsonRpc {
         code: null,
         message: null,
         fullResponse: data,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
@@ -122,6 +128,7 @@ export class EthereumJsonRpc {
         code: null,
         message: null,
         fullResponse: data,
+        body: body,
         latency,
         httpStatus: res.status,
         httpStatusText: res.statusText,
