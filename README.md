@@ -6,10 +6,19 @@ To install dependencies:
 bun install
 ```
 
-To run:
+### Available tests:
 
+
+##### Realtime tests:
+
+- Realtime indexing workload Based on Ponder indexer
 ```bash
-bun run index.ts
+bun run realtime
 ```
 
-This project was created using `bun init` in bun v1.2.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+##### Archive tests:
+
+- (Under development) Common archive RPC requests, based on hard to detect issues.
+```bash
+bun run archive
+```
